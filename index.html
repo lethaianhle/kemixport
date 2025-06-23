@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav-kemixport.png">
     <title>Kemixport - Than Sạch Từ Làng Nghề Việt Nam - Đối Tác Toàn Cầu Của Bạn</title>
     <!-- fontawesome css -->
     <link rel="stylesheet" preload href="assets/css/plugins/fontawesome.css">
@@ -39,15 +39,22 @@
                                     <a href="#">info@kemixport.com</a>
                                 </div>
                             </div>
-                            <div class="right">
+                            <div class="right"
+                                style="display: flex; align-items: center; justify-content: space-between;">
                                 <div class="social-header">
-                                    <span>Theo dõi chúng tôi:</span>
+                                    <span data-i18n="menu.follow-us">Follow us on:</span>
                                     <ul>
                                         <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                                         <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
                                         <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
                                     </ul>
+                                </div>
+                                <div class="language-switcher" style="margin-left: 40px;">
+                                    <select onchange="onLangChange()" id="lang-select" style="color: #222;">
+                                        <option value="vi">Vietnamese</option>
+                                        <option value="en">English</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -59,17 +66,17 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="header-bottom">
-                        <div class="logo-area">
-                            <a href="index.html"><img src="assets/images/logo/01.svg" alt="logo"></a>
+                        <div class="logo-area" style="width: 170px;">
+                            <a href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
                         </div>
                         <div class="nav-area">
                             <ul class="">
                                 <li class="main-nav">
-                                    <a href="index.html">Trang chủ</a>
+                                    <a href="index.html" data-i18n="menu.home">Home</a>
                                 </li>
 
                                 <li class="main-nav has-dropdown mega-menu">
-                                    <a href="#">Sản phẩm</a>
+                                    <a href="#" data-i18n="menu.products">Products</a>
                                     <div class="rts-mega-menu service-mega-menu-style">
                                         <div class="wrapper">
                                             <div class="container">
@@ -200,16 +207,17 @@
                                     </div>
                                 </li>
                                 <li class="main-nav">
-                                    <a href="#">Về chúng tôi</a>
+                                    <a href="#" data-i18n="menu.about">About Us</a>
                                 </li>
                                 <li class="main-nav">
-                                    <a href="blog-grid.html">Blog</a>
+                                    <a href="blog-grid.html" data-i18n="menu.blog">Blog</a>
                                 </li>
-                                <li class="main-nav"><a href="contact.html">Liên hệ</a></li>
+                                <li class="main-nav"><a href="contact.html" data-i18n="menu.contact">Contact</a></li>
                             </ul>
                         </div>
                         <div class="header-end">
-                            <a href="appoinment.html" class="rts-btn btn-primary">Nhận tư vấn ngay</a>
+                            <a href="appoinment.html" class="rts-btn btn-primary" data-i18n="button.consult">Nhận tư vấn
+                                ngay</a>
                             <div class="nav-btn menu-btn" id="menu-btn">
                                 <img src="assets/images/logo/bar.svg" alt="nav-iamge">
                             </div>
@@ -409,15 +417,18 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="banner-four-inner-content">
-                                        <h1 class="title">Than Sạch Từ Làng Nghề Việt Nam <br> Đối Tác Toàn Cầu Của Bạn
+                                        <h1 class="title" data-i18n="banner.title">Clean Charcoal from Vietnam's Craft
+                                            Villages <br>
+                                            Your Global Partner
                                         </h1>
-                                        <p class="disc">
-                                            Chúng tôi biến phế phẩm gỗ thành nhiên liệu không khói, nhiệt lượng cao,
-                                            thân thiện với môi trường.
-                                            Chất lượng vượt trội với giá trực tiếp từ nhà sản xuất.
+                                        <p class="disc" data-i18n="banner.desc">
+                                            We transform wood by-products into smokeless,
+                                            high-heat, eco-friendly fuel.
+                                            Superior quality at direct factory prices.
                                         </p>
                                         <div class="button-wrapper">
-                                            <a href="contact.html" class="rts-btn btn-primary">Yêu cầu báo giá <img
+                                            <a href="contact.html" class="rts-btn btn-primary"
+                                                data-i18n="button.quote">REQUEST A QUOTE <img
                                                     src="assets/images/icons/arrow-up-right.svg" alt="arrow"></a>
                                         </div>
                                     </div>
@@ -437,7 +448,7 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="banner-four-inner-content">
-                                        <h1 class="title">Let’s Build Future Home <br> Together</h1>
+                                        <h1 class="title">Let's Build Future Home <br> Together</h1>
                                         <p class="disc">
                                             We are dedicated to building structures that last and relationships that
                                             endure. With a
@@ -450,9 +461,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="shape-area">
-                            <img src="assets/images/banner/08.webp" alt="banner">
                         </div>
                     </div>
                     <!-- rts banner area end -->
@@ -464,7 +472,7 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="banner-four-inner-content">
-                                        <h1 class="title">Let’s Build Future Home <br> Together</h1>
+                                        <h1 class="title">Let's Build Future Home <br> Together</h1>
                                         <p class="disc">
                                             We are dedicated to building structures that last and relationships that
                                             endure. With a
@@ -477,9 +485,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="shape-area">
-                            <img src="assets/images/banner/08.webp" alt="banner">
                         </div>
                     </div>
                     <!-- rts banner area end -->
@@ -491,7 +496,7 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="banner-four-inner-content">
-                                        <h1 class="title">Let’s Build Future Home <br> Together</h1>
+                                        <h1 class="title">Let's Build Future Home <br> Together</h1>
                                         <p class="disc">
                                             We are dedicated to building structures that last and relationships that
                                             endure. With a
@@ -504,9 +509,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="shape-area">
-                            <img src="assets/images/banner/08.webp" alt="banner">
                         </div>
                     </div>
                     <!-- rts banner area end -->
@@ -519,27 +521,27 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="single-thumbnail">
-                            <img src="assets/images/banner/09.webp" alt="">
+                            <img src="assets/images/portfolio/xuong9.JPG" alt="">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="single-thumbnail">
-                            <img src="assets/images/banner/10.webp" alt="">
+                            <img src="assets/images/portfolio/xuong5.JPG" alt="">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="single-thumbnail">
-                            <img src="assets/images/banner/09.webp" alt="">
+                            <img src="assets/images/portfolio/xuong6.JPG" alt="">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="single-thumbnail">
-                            <img src="assets/images/banner/10.webp" alt="">
+                            <img src="assets/images/portfolio/xuong7.JPG" alt="">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="single-thumbnail">
-                            <img src="assets/images/banner/09.webp" alt="">
+                            <img src="assets/images/portfolio/xuong8.JPG" alt="">
                         </div>
                     </div>
                 </div>
@@ -561,16 +563,16 @@
             <div class="row align-items-center">
                 <div class="col-xl-6">
                     <div class="about-four-left-wrapper">
-                        <h2 class="title">Sự Khác Biệt <br>
+                        <h2 class="title" data-i18n="about.title">Sự Khác Biệt <br>
                             Tạo Nên Vị Thế Dẫn Đầu</h2>
-                        <p class="disc">
+                        <p class="disc" data-i18n="about.desc1">
                             Chủ Động Nguồn Cung & Giá - Kiểm soát 100% mùn cưa từ các làng nghề gỗ, đảm bảo sản lượng
                             800-1,500 tấn/tháng và giá gốc cạnh tranh.
                             Với 15 Năm Kinh Nghiệm - Chúng tôi là bậc thầy trong công nghệ sản xuất than sạch, đảm bảo
                             chất lượng đồng nhất, không pha trộn
                             và đáp ứng mọi yêu cầu khắt khe từ nướng BBQ Trung Đông đến sưởi ấm Châu Âu.
                         </p>
-                        <p class="disc">
+                        <p class="disc" data-i18n="about.desc2">
                             Giao Hàng Đúng Hẹn: Quy mô lớn, quy trình tối ưu, cam kết tiến độ cho mọi đơn hàng.
                         </p>
                         <div class="counter-area-wrapper-about-4">
@@ -581,7 +583,7 @@
                                 <div class="right-content-wrapper">
                                     <h2 class="counter title"><span class="odometer" data-count="34">00</span>k+
                                     </h2>
-                                    <span class="ss">Khách hàng</span>
+                                    <span class="ss" data-i18n="about.counter1">Khách hàng</span>
                                 </div>
                             </div>
                             <div class="single-counter">
@@ -591,7 +593,7 @@
                                 <div class="right-content-wrapper">
                                     <h2 class="counter title"><span class="odometer" data-count="8.3">00</span>k+
                                     </h2>
-                                    <span class="ss">Dự án thành công</span>
+                                    <span class="ss" data-i18n="about.counter2">Dự án thành công</span>
                                 </div>
                             </div>
                         </div>
@@ -602,12 +604,13 @@
                     <div class="about-right-wrapper-rour">
                         <div class="single-right-content bg-1 bg_image">
                             <div class="inner">
-                                <h5 class="title">Liên hệ ngay với <br>
+                                <h5 class="title" data-i18n="about.cta.title">Liên hệ ngay với <br>
                                     chúng tôi</h5>
-                                <p class="disc">
+                                <p class="disc" data-i18n="about.cta.desc">
                                     Và nhận báo giá cạnh tranh nhất thị trường.
                                 </p>
-                                <a href="contact.html" class="rts-btn btn-white">Liên hệ ngay</a>
+                                <a href="contact.html" class="rts-btn btn-white" data-i18n="about.cta.button">Liên hệ
+                                    ngay</a>
                             </div>
                         </div>
                         <div class="single-right-content bg-2 bg_image">
@@ -626,7 +629,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="title-center-wrapper-4">
-                        <h2 class="title">Khám Phá Các Dòng Sản Phẩm <br>
+                        <h2 class="title" data-i18n="service.title">Khám Phá Các Dòng Sản Phẩm <br>
                             Của Chúng Tôi</h2>
                     </div>
                 </div>
@@ -636,18 +639,19 @@
                     <div class="single-service-style-4">
                         <div class="top">
                             <a href="#">
-                                <h4 class="title">Hạng Premium</h4>
-                                <h5 class="title">Than Lục Giác</h5>
+                                <h4 class="title" data-i18n="service.premium.title">Hạng Premium</h4>
+                                <h5 class="title" data-i18n="service.premium.sub">Than Lục Giác</h5>
                             </a>
-                            <p class="disc">
+                            <p class="disc" data-i18n="service.premium.desc">
                                 Nhiệt lượng cao, cháy trên 4 giờ, cực ít khói. Lựa chọn hàng đầu cho các thị trường khó
                                 tính.
                             </p>
                         </div>
                         <div class="thumbnail">
-                            <img src="assets/images/service/than-premium.JPG" alt="">
+                            <img src="assets/images/service/product1.JPG" alt="">
                             <div class="hidden-content">
-                                <a href="appoinment.html" class="rts-btn btn-white">Thông Số Kỹ Thuật</a>
+                                <a href="appoinment.html" class="rts-btn btn-white" data-i18n="service.button">Thông Số
+                                    Kỹ Thuật</a>
                             </div>
                         </div>
                     </div>
@@ -656,17 +660,18 @@
                     <div class="single-service-style-4">
                         <div class="top">
                             <a href="#">
-                                <h4 class="title">Hạng Standard</h4>
-                                <h5 class="title">Than Vuông</h5>
+                                <h4 class="title" data-i18n="service.standard.title">Hạng Standard</h4>
+                                <h5 class="title" data-i18n="service.standard.sub">Than Vuông</h5>
                             </a>
-                            <p class="disc">
+                            <p class="disc" data-i18n="service.standard.desc">
                                 Hiệu suất ổn định, giá cả cạnh tranh, phù hợp cho nhu cầu phổ thông.
                             </p>
                         </div>
                         <div class="thumbnail">
-                            <img src="assets/images/service/than-standard.JPG" alt="">
+                            <img src="assets/images/service/product2.JPG" alt="">
                             <div class="hidden-content">
-                                <a href="appoinment.html" class="rts-btn btn-white">Thông Số Kỹ Thuật</a>
+                                <a href="appoinment.html" class="rts-btn btn-white" data-i18n="service.button">Thông Số
+                                    Kỹ Thuật</a>
                             </div>
                         </div>
                     </div>
@@ -675,17 +680,18 @@
                     <div class="single-service-style-4">
                         <div class="top">
                             <a href="#">
-                                <h4 class="title">Hạng Basic</h4>
-                                <h5 class="title">Than Vuông</h5>
+                                <h4 class="title" data-i18n="service.basic.title">Hạng Basic</h4>
+                                <h5 class="title" data-i18n="service.basic.sub">Than Vuông</h5>
                             </a>
-                            <p class="disc">
+                            <p class="disc" data-i18n="service.basic.desc">
                                 Hiệu suất ổn định, giá cả cạnh tranh, phù hợp cho nhu cầu phổ thông.
                             </p>
                         </div>
                         <div class="thumbnail">
-                            <img src="assets/images/service/than-trung-cap.JPG" alt="">
+                            <img src="assets/images/service/product3.JPG" alt="">
                             <div class="hidden-content">
-                                <a href="appoinment.html" class="rts-btn btn-white">Thông Số Kỹ Thuật</a>
+                                <a href="appoinment.html" class="rts-btn btn-white" data-i18n="service.button">Thông Số
+                                    Kỹ Thuật</a>
                             </div>
                         </div>
                     </div>
@@ -694,17 +700,18 @@
                     <div class="single-service-style-4">
                         <div class="top">
                             <a href="#">
-                                <h4 class="title">Hạng Normal</h4>
-                                <h5 class="title">Than Vuông</h5>
+                                <h4 class="title" data-i18n="service.normal.title">Hạng Normal</h4>
+                                <h5 class="title" data-i18n="service.normal.sub">Than Vuông</h5>
                             </a>
-                            <p class="disc">
+                            <p class="disc" data-i18n="service.normal.desc">
                                 Hiệu suất ổn định, giá cả cạnh tranh, phù hợp cho nhu cầu phổ thông.
                             </p>
                         </div>
                         <div class="thumbnail">
-                            <img src="assets/images/service/than-capthap.JPG" alt="">
+                            <img src="assets/images/service/product4.JPG" alt="">
                             <div class="hidden-content">
-                                <a href="appoinment.html" class="rts-btn btn-white">Thông Số Kỹ Thuật</a>
+                                <a href="appoinment.html" class="rts-btn btn-white" data-i18n="service.button">Thông Số
+                                    Kỹ Thuật</a>
                             </div>
                         </div>
                     </div>
@@ -718,21 +725,16 @@
     <div class="our-working-process-area-4 bg_image">
         <div class="marque-wrapper one" dir="ltr">
             <div class="marquee">
-                <span>Chuyên nghiệp Uy Tín Chất Lượng &nbsp;</span>
-                <span>Chuyên nghiệp Uy Tín Chất Lượng &nbsp;</span>
+                <span data-i18n="marquee.slogan">Chuyên nghiệp Uy Tín Chất Lượng &nbsp;</span>
+                <span data-i18n="marquee.slogan">Chuyên nghiệp Uy Tín Chất Lượng &nbsp;</span>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="title-center-wrapper-4">
-                        <h2 class="title">Quy Trình Hợp Tác</h2>
-                        <p class="disc">
-                            Chúng tôi luôn đặt sự rõ ràng và minh bạch làm nền tảng trong mọi giao dịch với khách hàng.
-                            Với mục tiêu mang đến trải nghiệm hợp tác đơn giản, đáng tin cậy và hiệu quả,
-                            quy trình đặt hàng của chúng tôi được chuẩn hóa thành 6 bước rõ ràng,
-                            từ khi tiếp nhận yêu cầu đến khi giao hàng và thanh toán.
-                        </p>
+                        <h2 class="title" data-i18n="process.title"></h2>
+                        <p class="disc" data-i18n="process.desc"></p>
                     </div>
                 </div>
             </div>
@@ -746,56 +748,43 @@
                 <div class="col-lg-2">
                     <div class="single-process-wrapper-4">
                         <span class="number">01</span>
-                        <h5 class="title">Tiếp nhận yêu cầu</h5>
-                        <p class="disc">
-                            Tiếp nhận thông tin chi tiết từ khách hàng như loại than cần mua, số lượng, tiêu chuẩn kỹ
-                            thuật, mục đích sử dụng, thời gian giao hàng và địa điểm nhận hàng.
-                        </p>
+                        <h5 class="title" data-i18n="process.1.title"></h5>
+                        <p class="disc" data-i18n="process.1.desc"></p>
                     </div>
                 </div>
                 <div class="col-lg-2">
                     <div class="single-process-wrapper-4">
                         <span class="number">02</span>
-                        <h5 class="title">Sản xuất</h5>
-                        <p class="disc">
-                            Sau khi thống nhất đơn hàng, tiến hành khai thác và sản xuất theo đúng yêu cầu.
-                        </p>
+                        <h5 class="title" data-i18n="process.2.title"></h5>
+                        <p class="disc" data-i18n="process.2.desc"></p>
                     </div>
                 </div>
                 <div class="col-lg-2">
                     <div class="single-process-wrapper-4">
                         <span class="number">03</span>
-                        <h5 class="title">Kiểm tra chất lượng</h5>
-                        <p class="disc">
-                            Đội ngũ QC (kiểm soát chất lượng) sẽ kiểm định từng lô sản phẩm trước khi đóng gói.
-                        </p>
+                        <h5 class="title" data-i18n="process.3.title"></h5>
+                        <p class="disc" data-i18n="process.3.desc"></p>
                     </div>
                 </div>
                 <div class="col-lg-2">
                     <div class="single-process-wrapper-4">
                         <span class="number">04</span>
-                        <h5 class="title">Đóng gói</h5>
-                        <p class="disc">
-                            Sản phẩm được đóng gói cẩn thận theo tiêu chuẩn hoặc yêu cầu riêng biệt của khách hàng.
-                        </p>
+                        <h5 class="title" data-i18n="process.4.title"></h5>
+                        <p class="disc" data-i18n="process.4.desc"></p>
                     </div>
                 </div>
                 <div class="col-lg-2">
                     <div class="single-process-wrapper-4">
                         <span class="number">05</span>
-                        <h5 class="title">Lưu kho/Vận chuyển</h5>
-                        <p class="disc">
-                            Hàng hóa sau khi kiểm tra và đóng gói sẽ được lưu trữ tạm thời tại kho trước khi vận chuyển.
-                        </p>
+                        <h5 class="title" data-i18n="process.5.title"></h5>
+                        <p class="disc" data-i18n="process.5.desc"></p>
                     </div>
                 </div>
                 <div class="col-lg-2">
                     <div class="single-process-wrapper-4">
                         <span class="number">06</span>
-                        <h5 class="title">Thanh toán</h5>
-                        <p class="disc">
-                            Khách hàng được lựa chọn phương thức thanh toán linh hoạt theo thỏa thuận.
-                        </p>
+                        <h5 class="title" data-i18n="process.6.title"></h5>
+                        <p class="disc" data-i18n="process.6.desc"></p>
                     </div>
                 </div>
             </div>
@@ -808,11 +797,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="rts-title-between-area-four">
-                        <h2 class="title-main">
-                            Khám phá Sản Phẩm, <br>
-                            Con người và câu chuyện của chúng tôi.
-                        </h2>
-                        <h2 class="counter title"><span class="odometer" data-count="350">00</span>+
+                        <h2 class="title-main" data-i18n="timeline.heading"></h2>
+                        <h2 class="counter title"><span class="odometer" data-count="15">00</span>+
                         </h2>
                     </div>
                 </div>
@@ -823,15 +809,12 @@
                 <div class="col-lg-3 col-md-6 col-sm-12 col-12">
                     <div class="single-project-area-one">
                         <a href="project-details.html" class="thumbnail">
-                            <img src="assets/images/portfolio/ongchu.JPG" alt="portfolio">
+                            <img src="assets/images/portfolio/xuong1.JPG" alt="portfolio">
                         </a>
                         <div class="inner-content">
                             <a href="project-details.html">
-                                <h5 class="title">A Modern Housing Solution for Dynamic Urban Life</h5>
+                                <h4 class="title" data-i18n="timeline.2010"></h4>
                             </a>
-                            <p class="disc">
-                                We assign a dedicated project manager oversee every detail and keep you informed...
-                            </p>
                             <a href="project-details.html" class="rts-btn btn-primary">View Details</a>
                         </div>
                     </div>
@@ -839,15 +822,12 @@
                 <div class="col-lg-3 col-md-6 col-sm-12 col-12">
                     <div class="single-project-area-one">
                         <a href="project-details.html" class="thumbnail">
-                            <img src="assets/images/portfolio/xuong1.JPG" alt="portfolio">
+                            <img src="assets/images/portfolio/lothan1.JPG" alt="portfolio">
                         </a>
                         <div class="inner-content">
                             <a href="project-details.html">
-                                <h5 class="title">Riverfront Residences Luxury Living with Scenic Views</h5>
+                                <h5 class="title" data-i18n="timeline.2016"></h5>
                             </a>
-                            <p class="disc">
-                                We assign a dedicated project manager oversee every detail and keep you informed...
-                            </p>
                             <a href="project-details.html" class="rts-btn btn-primary">View Details</a>
                         </div>
                     </div>
@@ -859,11 +839,8 @@
                         </a>
                         <div class="inner-content">
                             <a href="project-details.html">
-                                <h5 class="title">Blending Urban Sophistication and Coastal Charm</h5>
+                                <h5 class="title" data-i18n="timeline.2025"></h5>
                             </a>
-                            <p class="disc">
-                                We assign a dedicated project manager oversee every detail and keep you informed...
-                            </p>
                             <a href="project-details.html" class="rts-btn btn-primary">View Details</a>
                         </div>
                     </div>
@@ -875,11 +852,8 @@
                         </a>
                         <div class="inner-content">
                             <a href="project-details.html">
-                                <h5 class="title">The New Heart of Downtown Business and Leisure</h5>
+                                <h5 class="title" data-i18n="timeline.2025plus"></h5>
                             </a>
-                            <p class="disc">
-                                We assign a dedicated project manager oversee every detail and keep you informed...
-                            </p>
                             <a href="project-details.html" class="rts-btn btn-primary">View Details</a>
                         </div>
                     </div>
@@ -889,134 +863,20 @@
     </div>
     <!-- feature project and success stories end -->
 
-    <!-- team area start -->
-    <div class="team-area-four">
-        <div class="container-1730">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="team-area-wrapper-4-main rts-section-gap">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="rts-title-between-area-four">
-                                        <h4>
-                                            Hãy để chuyên gia của chúng tôi tư vấn giải pháp than sạch phù hợp nhất.<br>
-                                            Nhận báo giá cạnh tranh trong vòng 24 giờ.
-                                        </h4>
-                                        <a href="appoinment.html" class="rts-btn btn-primary">LIÊN HỆ NGAY</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row mt--40">
-                                <div class="col-lg-12">
-                                    <div class="team-area-swiper-main-4" dir="ltr">
-                                        <div class="swiper mySwiper-team-4">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <div class="single-team-area-four">
-                                                        <a href="team-details.html" class="thumbnail">
-                                                            <img src="assets/images/team/04.webp" alt="thumbnail">
-                                                        </a>
-                                                        <div class="inner">
-                                                            <a href="team-details.html">
-                                                                <h5 class="title">Edward Thomas</h5>
-                                                                <p class="disc">
-                                                                    Marketing Manager
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="single-team-area-four">
-                                                        <a href="team-details.html" class="thumbnail">
-                                                            <img src="assets/images/team/05.webp" alt="thumbnail">
-                                                        </a>
-                                                        <div class="inner">
-                                                            <a href="team-details.html">
-                                                                <h5 class="title">Frederick Jack</h5>
-                                                                <p class="disc">
-                                                                    Worker
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="single-team-area-four">
-                                                        <a href="team-details.html" class="thumbnail">
-                                                            <img src="assets/images/team/06.webp" alt="thumbnail">
-                                                        </a>
-                                                        <div class="inner">
-                                                            <a href="team-details.html">
-                                                                <h5 class="title">Edward Thomas</h5>
-                                                                <p class="disc">
-                                                                    Marketing Manager
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="single-team-area-four">
-                                                        <a href="team-details.html" class="thumbnail">
-                                                            <img src="assets/images/team/07.webp" alt="thumbnail">
-                                                        </a>
-                                                        <div class="inner">
-                                                            <a href="team-details.html">
-                                                                <h5 class="title">Samuel Arthur</h5>
-                                                                <p class="disc">
-                                                                    Manager
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="single-team-area-four">
-                                                        <a href="team-details.html" class="thumbnail">
-                                                            <img src="assets/images/team/06.webp" alt="thumbnail">
-                                                        </a>
-                                                        <div class="inner">
-                                                            <a href="team-details.html">
-                                                                <h5 class="title">Edward Thomas</h5>
-                                                                <p class="disc">
-                                                                    Marketing Manager
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination"></div>
-                                        </div>
-                                        <div class="swiper-button-next"><i class="fa-light fa-arrow-right"></i></div>
-                                        <div class="swiper-button-prev"><i class="fa-light fa-arrow-left"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- team area end -->
-
     <!-- small cta area start -->
-    <div class="small-cta-area rts-section-gapTop">
+    <div class="small-cta-area">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-4">
                     <div class="cta-small-left">
                         <i class="fa-regular fa-clock"></i>
-                        <span>Thứ 2 - Thứ 7: 8:00 am - 18:45pm</span>
+                        <span data-i18n="cta.hours"></span>
                     </div>
                 </div>
                 <div class="col-lg-8">
                     <div class="cta-small-right">
-                        <p>Sẵn Sàng Nâng Tầm Nguồn Cung Của Bạn?</p>
-                        <a href="#">Liên hệ với chúng tôi</a>
+                        <p data-i18n="cta.ready"></p>
+                        <a href="#" data-i18n="cta.contact"></a>
                     </div>
                 </div>
             </div>
@@ -1032,16 +892,16 @@
                     <div class="marque-area-wrapper-4" dir="ltr">
                         <div class="marque-wrapper one">
                             <div class="marquee-2">
-                                <span> - Chất Lượng Đồng Nhất - Nguồn Cung Bền Vững - Đối Tác Tin Cậy - Giá Cả Cạnh
-                                    Tranh</span>
-                                <span> - Chất Lượng Đồng Nhất - Nguồn Cung Bền Vững - Đối Tác Tin Cậy - Giá Cả Cạnh
-                                    Tranh</span>
-                                <span> - Chất Lượng Đồng Nhất - Nguồn Cung Bền Vững - Đối Tác Tin Cậy - Giá Cả Cạnh
-                                    Tranh</span>
-                                <span> - Chất Lượng Đồng Nhất - Nguồn Cung Bền Vững - Đối Tác Tin Cậy - Giá Cả Cạnh
-                                    Tranh</span>
-                                <span> - Chất Lượng Đồng Nhất - Nguồn Cung Bền Vững - Đối Tác Tin Cậy - Giá Cả Cạnh
-                                    Tranh</span>
+                                <span data-i18n="marquee2.slogan">- Chất Lượng Đồng Nhất - Nguồn Cung Bền Vững - Đối Tác
+                                    Tin Cậy - Giá Cả Cạnh Tranh</span>
+                                <span data-i18n="marquee2.slogan">- Chất Lượng Đồng Nhất - Nguồn Cung Bền Vững - Đối Tác
+                                    Tin Cậy - Giá Cả Cạnh Tranh</span>
+                                <span data-i18n="marquee2.slogan">- Chất Lượng Đồng Nhất - Nguồn Cung Bền Vững - Đối Tác
+                                    Tin Cậy - Giá Cả Cạnh Tranh</span>
+                                <span data-i18n="marquee2.slogan">- Chất Lượng Đồng Nhất - Nguồn Cung Bền Vững - Đối Tác
+                                    Tin Cậy - Giá Cả Cạnh Tranh</span>
+                                <span data-i18n="marquee2.slogan">- Chất Lượng Đồng Nhất - Nguồn Cung Bền Vững - Đối Tác
+                                    Tin Cậy - Giá Cả Cạnh Tranh</span>
                             </div>
                         </div>
                     </div>
@@ -1061,8 +921,8 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="title-center-wrapper-4">
-                                        <h2 class="title">Client Experiences That <br>
-                                            Speak Volumes</h2>
+                                        <h2 class="title" data-i18n="testimonials.heading">Cảm nhận khách hàng về
+                                            Kemixport</h2>
                                     </div>
                                 </div>
                             </div>
@@ -1082,20 +942,15 @@
                                                                 <img src="assets/images/testimonials/01.webp"
                                                                     alt="avatar">
                                                                 <div class="info">
-                                                                    <h6 class="title">Benjamin Clarke</h6>
-                                                                    <span>Foreman</span>
+                                                                    <h6 class="title" data-i18n="testimonial.1.name">
+                                                                    </h6>
+                                                                    <span data-i18n="testimonial.1.role"></span>
                                                                 </div>
                                                             </div>
                                                             <img class="quote" src="assets/images/testimonials/01.svg"
                                                                 alt="quote">
                                                         </div>
-                                                        <p class="disc-area">
-                                                            “We are thrilled with the work done by Elever. Their team
-                                                            was not only
-                                                            professional and courteous, but they also delivered a
-                                                            high-quality build
-                                                            on time. We look forward to working with them again”
-                                                        </p>
+                                                        <p class="disc-area" data-i18n="testimonial.1.text"></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1111,19 +966,15 @@
                                                                 <img src="assets/images/testimonials/02.webp"
                                                                     alt="avatar">
                                                                 <div class="info">
-                                                                    <h6 class="title">Jack Mitchell</h6>
-                                                                    <span>Safety Officer</span>
+                                                                    <h6 class="title" data-i18n="testimonial.2.name">
+                                                                    </h6>
+                                                                    <span data-i18n="testimonial.2.role"></span>
                                                                 </div>
                                                             </div>
                                                             <img class="quote" src="assets/images/testimonials/01.svg"
                                                                 alt="quote">
                                                         </div>
-                                                        <p class="disc-area">
-                                                            "Working with Elever was an absolute pleasure. They kept us
-                                                            informed at every step, listened to our needs, and delivered
-                                                            on their promises. The team’s dedication to quality and
-                                                            attention”
-                                                        </p>
+                                                        <p class="disc-area" data-i18n="testimonial.2.text"></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1139,20 +990,15 @@
                                                                 <img src="assets/images/testimonials/02.webp"
                                                                     alt="avatar">
                                                                 <div class="info">
-                                                                    <h6 class="title">Benjamin Clarke</h6>
-                                                                    <span>Foreman</span>
+                                                                    <h6 class="title" data-i18n="testimonial.3.name">
+                                                                    </h6>
+                                                                    <span data-i18n="testimonial.3.role"></span>
                                                                 </div>
                                                             </div>
                                                             <img class="quote" src="assets/images/testimonials/01.svg"
                                                                 alt="quote">
                                                         </div>
-                                                        <p class="disc-area">
-                                                            “We are thrilled with the work done by Elever. Their team
-                                                            was not only
-                                                            professional and courteous, but they also delivered a
-                                                            high-quality build
-                                                            on time. We look forward to working with them again”
-                                                        </p>
+                                                        <p class="disc-area" data-i18n="testimonial.3.text"></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1233,44 +1079,154 @@
     </div>
     <!-- rts blog area end -->
 
-    <!-- footer area four start -->
-    <div class="footer-area-four">
-        <div class="container-1730">
+    <!-- rts footer area start -->
+    <div class="rts-footer-area">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="footer-four-wrapper">
+                    <div class="contact-area-footer-top">
+                        <div class="single-contact-area-box">
+                            <div class="icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h6 class="title" data-i18n="footer.phone"></h6>
+                            <a href="#">(+84) 968 565 999</a>
+                            <a href="#">(+84) 968 565 999</a>
+                        </div>
+                        <div class="single-contact-area-box">
+                            <div class="icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <h6 class="title" data-i18n="footer.hours"></h6>
+                            <a data-i18n="footer.hours.value"></a>
+                        </div>
+                        <div class="single-contact-area-box">
+                            <div class="icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <h6 class="title" data-i18n="footer.email"></h6>
+                            <a href="#">info@kemixport.com</a>
+                            <a href="#">export@kemixport.com</a>
+                        </div>
+                        <div class="single-contact-area-box">
+                            <div class="icon">
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            </div>
+                            <h6 class="title" data-i18n="footer.address"></h6>
+                            <a data-i18n="footer.address.value"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-full">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="nav-footer-wrapper-one">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <div class="footer-float-right-4">
-                                        <div class="left-content-area">
-                                            <span>Liên hệ với chúng tôi</span>
-                                            <a href="#">
-                                                <h6 class="title" style="font-size: 35px !important;">(+84) 968 565 999</h6>
-                                            </a>
-                                            <p>Nhận báo giá tốt nhất thị trường</p>
-                                        </div>
-                                        <div class="map-and-opening-area">
-                                            <div class="map-area">
-                                                <iframe
-                                                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29208.075211543997!2d90.42329600000001!3d23.782679549999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1736150862107!5m2!1sen!2sbd"
-                                                    width="200" height="366" style="border:0;" allowfullscreen=""
-                                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                            </div>
-                                            <div class="opening-area-wrapper">
-                                                <div class="inner">
-                                                    <img src="assets/images/service/10.svg" alt="">
-                                                    <div class="opening-area mt--30">
-                                                        <span>MONDAY - SATURDAY</span>
-                                                        <h6 class="title">9:00 am - 9:30 pm</h6>
-                                                    </div>
-                                                    <div class="opening-area">
-                                                        <span>SUNDAY</span>
-                                                        <h6 class="title">9:00 am - 9:30 pm</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <ul class="footer-float-nav">
+                                        <li><a href="#" data-i18n="footer.home"></a></li>
+                                        <li><a href="#" data-i18n="footer.products"></a></li>
+                                        <li><a href="#" data-i18n="footer.about"></a></li>
+                                        <li><a href="#" data-i18n="footer.blog"></a></li>
+                                        <li><a href="#" data-i18n="footer.contact"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="footer-wrapper-left-one">
+                        <a href="#" class="logo">
+                            <img src="assets/images/logo/logo.png" alt="logo" style="width: 170px;">
+                        </a>
+                        <p class="disc" data-i18n="footer.desc"></p>
+                        <div class="social-area-wrapper-one">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="footer-wrapper-right">
+                        <div class="single-nav-area-footer use-link">
+                            <h4 class="title">Useful Links</h4>
+                            <ul>
+                                <li><a href="about.html"><i class="fa-regular fa-arrow-right-long"></i>About Us</a></li>
+                                <li><a href="about.html"><i class="fa-regular fa-arrow-right-long"></i>Our Gallery</a>
+                                </li>
+                                <li><a href="service.html"><i class="fa-regular fa-arrow-right-long"></i>Our
+                                        Services</a>
+                                </li>
+                                <li><a href="team.html"><i class="fa-regular fa-arrow-right-long"></i>Our Team</a></li>
+                                <li><a href="contact.html"><i class="fa-regular fa-arrow-right-long"></i>Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="single-nav-area-footer use-link">
+                            <h4 class="title">Quick Services</h4>
+                            <ul>
+                                <li><a href="service-single.html"><i class="fa-regular fa-arrow-right-long"></i>General
+                                        Contracting</a>
+                                </li>
+                                <li><a href="service-single.html"><i class="fa-regular fa-arrow-right-long"></i>Project
+                                        Management</a>
+                                </li>
+                                <li><a href="service-single.html"><i class="fa-regular fa-arrow-right-long"></i>New
+                                        Construction</a></li>
+                                <li><a href="service-single.html"><i
+                                            class="fa-regular fa-arrow-right-long"></i>Renovations
+                                        &
+                                        Remodeling</a></li>
+                                <li><a href="service-single.html"><i class="fa-regular fa-arrow-right-long"></i>Interior
+                                        Finishing</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="single-nav-area-footer news-letter">
+                            <h4 class="title">Newsletter</h4>
+                            <p>Aplications prodize before front end ortals visualize front end</p>
+                            <form action="#">
+                                <input type="email" placeholder="Email Address" required>
+                                <button class="btn-subscribe mt--15">Subscribe Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-full copyright-area-one">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="copyright-wrapper">
+                                    <p class="mb-0">Copyright &copy;
+                                        <script>
+                                            document.write(
+                                                new Date().getFullYear()
+                                            )
+                                        </script>
+                                        <span data-i18n="footer.copyright">Kemixport. All Rights Reserved.</span>
+                                    </p>
+                                    <div class="right-nav">
+                                        <ul>
+                                            <li><a data-i18n="footer.terms"></a></li>
+                                            <li><a data-i18n="footer.privacy"></a></li>
+                                            <li><a data-i18n="footer.environment"></a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -1279,210 +1235,10 @@
                 </div>
             </div>
         </div>
-        <div class="container ptb--100 pl_sm--15 pt_sm--50 pb_sm--50">
-            <div class="row g-5">
-                <div class="col-xl-5 col-lg-6">
-                    <div class="logo-area">
-                        <img src="assets/images/logo/01.svg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6">
-                    <div class="footer-location-area-4">
-                        <div class="icon">
-                            <i class="fa-regular fa-clock"></i>
-                        </div>
-                        <div class="inner-wrapper">
-                            <h5 class="title">Email</h5>
-                            <div class="mail">
-                                <a href="#">info@kemixport.com</a><br>
-                                <a href="#">help@kemixport.com</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6">
-                    <div class="footer-location-area-4">
-                        <div class="icon">
-                            <i class="fa-light fa-location-dot"></i>
-                        </div>
-                        <div class="inner-wrapper">
-                            <h5 class="title">Địa chỉ</h5>
-                            <div class="mail">
-                                <a href="#">804 Quang Trung, Hà Đông, Hà Nội, Việt Nam</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright-area-4-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="copyright-area-4">
-                            <p class="mb-0">Copyright &copy;
-                                <script>
-                                    document.write(
-                                        new Date().getFullYear()
-                                    )
-                                </script>
-                                Kemixport. All Rights Reserved.
-                            </p>
-                            <div class="right-nav">
-                                <a href="terms-of-condition.html">Terms of use Privacy</a>
-                                <a href="privacy-policy.html">Environmental Policy</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-    <!-- footer area four end -->
+    <!-- rts footer area end -->
 
-    <!-- cart area start -->
-    <div class="cart-bar">
-        <div class="cart-header">
-            <h3 class="cart-heading">MY CART (3 ITEMS)</h3>
-            <div class="close-cart"><i class="fal fa-times"></i></div>
-        </div>
-        <div class="product-area">
-            <div class="product-item">
-                <div class="product-detail">
-                    <div class="product-thumb"><img src="assets/images/slider/image1.jpg" alt="product-thumb"></div>
-                    <div class="item-wrapper">
-                        <span class="product-name">Construct Map</span>
-                        <div class="item-wrapper">
-                            <span class="product-variation"><span class="color">Green /</span>
-                                <span class="size">XL</span></span>
-                        </div>
-                        <div class="item-wrapper">
-                            <span class="product-qnty">3 ×</span>
-                            <span class="product-price">$198.00</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cart-edit">
-                    <div class="quantity-edit">
-                        <button class="button"><i class="fal fa-minus minus"></i></button>
-                        <input type="text" class="input" value="3">
-                        <button class="button plus">+<i class="fal fa-plus plus"></i></button>
-                    </div>
-                    <div class="item-wrapper d-flex mr--5 align-items-center">
-                        <a href="#" class="product-edit"><i class="fal fa-edit"></i></a>
-                        <a href="#" class="delete-cart"><i class="fal fa-times"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="product-item">
-                <div class="product-detail">
-                    <div class="product-thumb"><img src="assets/images/slider/image2.jpg" alt="product-thumb"></div>
-                    <div class="item-wrapper">
-                        <span class="product-name"> Bridge product</span>
-                        <div class="item-wrapper">
-                            <span class="product-variation"><span class="color">Green /</span>
-                                <span class="size">XL</span></span>
-                        </div>
-                        <div class="item-wrapper">
-                            <span class="product-qnty">2 ×</span>
-                            <span class="product-price">$88.00</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cart-edit">
-                    <div class="quantity-edit">
-                        <button class="button"><i class="fal fa-minus minus"></i></button>
-                        <input type="text" class="input" value="2">
-                        <button class="button plus">+<i class="fal fa-plus plus"></i></button>
-                    </div>
-                    <div class="item-wrapper d-flex mr--5 align-items-center">
-                        <a href="#" class="product-edit"><i class="fal fa-edit"></i></a>
-                        <a href="#" class="delete-cart"><i class="fal fa-times"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="product-item last-child">
-                <div class="product-detail">
-                    <div class="product-thumb"><img src="assets/images/slider/image5.jpg" alt="product-thumb"></div>
-                    <div class="item-wrapper">
-                        <span class="product-name">Labour helmet</span>
-                        <div class="item-wrapper">
-                            <span class="product-variation"><span class="color">Green /</span>
-                                <span class="size">XL</span></span>
-                        </div>
-                        <div class="item-wrapper">
-                            <span class="product-qnty">1 ×</span>
-                            <span class="product-price">$289.00</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cart-edit">
-                    <div class="quantity-edit">
-                        <button class="button"><i class="fal fa-minus minus"></i></button>
-                        <input type="text" class="input" value="2">
-                        <button class="button plus">+<i class="fal fa-plus plus"></i></button>
-                    </div>
-                    <div class="item-wrapper d-flex mr--5 align-items-center">
-                        <a href="#" class="product-edit"><i class="fal fa-edit"></i></a>
-                        <a href="#" class="delete-cart"><i class="fal fa-times"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="cart-bottom-area">
-            <span class="spend-shipping"><i class="fal fa-truck"></i> SPENT <span class="amount">$199.00</span> MORE
-                FOR FREE SHIPPING</span>
-            <span class="total-price">TOTAL: <span class="price">$556</span></span>
-            <a href="checkout.html" class="checkout-btn cart-btn">PROCEED TO CHECKOUT</a>
-            <a href="cart.html" class="view-btn cart-btn">VIEW CART</a>
-        </div>
-    </div>
-    <!-- cart area edn -->
-    <!-- progress area start -->
-    <!-- <div id="elevate-load">
-    <div class="loader-wrapper">
-        <div class="lds-ellipsis">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-</div> -->
-    <!-- progress area end -->
-
-    <!-- rtl btn area start -->
-    <!-- <div class="rtl-ltr-switcher-btn">
-        <span class="rtl show">View RTL</span>
-        <span class="ltr">View LTR</span>
-    </div> -->
-    <!-- rtl btn area end -->
-
-    <!-- progress area start -->
-    <div class="progress-wrap">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
-                style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
-            </path>
-        </svg>
-    </div>
-    <!-- progress area end -->
-
-
-    <!-- offcanvase search -->
-    <div class="search-input-area">
-        <div class="container">
-            <div class="search-input-inner">
-                <div class="input-div">
-                    <input class="search-input autocomplete" type="text" placeholder="Search by keyword or #">
-                    <button><i class="far fa-search"></i></button>
-                </div>
-            </div>
-        </div>
-        <div id="close" class="search-close-icon"><i class="far fa-times"></i></div>
-    </div>
-    <div id="anywhere-home" class="">
-    </div>
+    <div class="footer-blur-separator"></div>
 
     <!-- scripts -->
     <script src="assets/js/plugins/jquery.js"></script>
@@ -1507,6 +1263,7 @@
     <script src="assets/js/plugins/contact.form.js"></script>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/lang.js"></script>
     <script>
         let lastScrollY = window.scrollY;
         let marquee = document.querySelector('.marquee');

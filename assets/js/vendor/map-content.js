@@ -39,12 +39,12 @@
       [
         locationData(
           "assets/images/banner/contact.jpg",
-          "cha, 100 , haji sonamia road, sobji goli, Badda",
-          "support@reactheme.com",
-          "1-333-345-6868"
+          "804 Quang Trung, Hà Đông, Hà Nội, Việt Nam",
+          "contact@kemixport.com",
+          "+84 968 565 999"
         ),
-        40.709327,
-        -74.004815,
+        20.959885,
+        105.762835,
         1,
         "<div></div>",
       ],
@@ -189,7 +189,7 @@
     var map = new google.maps.Map(document.getElementById("map-contact"), {
       zoom: zoomLevel,
       scrollwheel: false,
-      center: new google.maps.LatLng(40.709295, -74.003099),
+      center: new google.maps.LatLng(20.959885, 105.762835),
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       zoomControl: true,
       zoomControlOptions: {

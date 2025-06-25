@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
-    <title>Elever - Construction Building & Renovation HTML Template</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav-kemixport.png">
+    <title>Kemixport - Than Sạch Từ Làng Nghề Việt Nam - Đối Tác Toàn Cầu Của Bạn</title>
     <!-- fontawesome css -->
     <link rel="stylesheet" preload href="assets/css/plugins/fontawesome.css">
     <link rel="stylesheet" preload href="assets/css/plugins/aos.css">
@@ -40,15 +39,22 @@
                                     <a href="#">info@kemixport.com</a>
                                 </div>
                             </div>
-                            <div class="right">
+                            <div class="right"
+                                style="display: flex; align-items: center; justify-content: space-between;">
                                 <div class="social-header">
-                                    <span>Theo dõi chúng tôi:</span>
+                                    <span data-i18n="menu.follow-us">Follow us on:</span>
                                     <ul>
                                         <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                                         <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
                                         <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
                                     </ul>
+                                </div>
+                                <div class="language-switcher" style="margin-left: 40px;">
+                                    <select onchange="onLangChange()" id="lang-select" style="color: #222;">
+                                        <option value="vi">Vietnamese</option>
+                                        <option value="en">English</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -60,17 +66,17 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="header-bottom">
-                        <div class="logo-area">
-                            <a href="index.html"><img src="assets/images/logo/01.svg" alt="logo"></a>
+                        <div class="logo-area" style="width: 170px;">
+                            <a href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
                         </div>
                         <div class="nav-area">
                             <ul class="">
                                 <li class="main-nav">
-                                    <a href="index.html">Trang chủ</a>
+                                    <a href="index.html" data-i18n="menu.home">Home</a>
                                 </li>
 
                                 <li class="main-nav has-dropdown mega-menu">
-                                    <a href="#">Sản phẩm</a>
+                                    <a href="#" data-i18n="menu.products">Products</a>
                                     <div class="rts-mega-menu service-mega-menu-style">
                                         <div class="wrapper">
                                             <div class="container">
@@ -201,16 +207,17 @@
                                     </div>
                                 </li>
                                 <li class="main-nav">
-                                    <a href="#">Về chúng tôi</a>
+                                    <a href="#" data-i18n="menu.about">About Us</a>
                                 </li>
                                 <li class="main-nav">
-                                    <a href="blog-grid.html">Blog</a>
+                                    <a href="blog-grid.html" data-i18n="menu.blog">Blog</a>
                                 </li>
-                                <li class="main-nav"><a href="contact.html">Liên hệ</a></li>
+                                <li class="main-nav"><a href="contact.html" data-i18n="menu.contact">Contact</a></li>
                             </ul>
                         </div>
                         <div class="header-end">
-                            <a href="appoinment.html" class="rts-btn btn-primary">Nhận tư vấn ngay</a>
+                            <a href="appoinment.html" class="rts-btn btn-primary" data-i18n="button.consult">Nhận tư vấn
+                                ngay</a>
                             <div class="nav-btn menu-btn" id="menu-btn">
                                 <img src="assets/images/logo/bar.svg" alt="nav-iamge">
                             </div>
@@ -220,6 +227,7 @@
             </div>
         </div>
     </header>
+
     <div id="side-bar" class="side-bar header-two">
         <button class="close-icon-menu"><i class="far fa-times"></i></button>
         <!-- inner menu area desktop start -->
@@ -429,19 +437,19 @@
                     <!-- single blog area start -->
                     <div class="rts-blog-card-one">
                         <a href="blog-details.html" class="thumbnail">
-                            <img src="assets/images/blog/01.webp" alt="blog_card">
+                            <img src="assets/images/blog/blog1.png" alt="blog_card">
                             <div class="tag-area">
-                                <span class="time">2Years Ago</span>
-                                <span class="location">Office</span>
+                                <span data-i18n="blog.tag.time" class="time">2Years Ago</span>
+                                <span data-i18n="blog.tag.location" class="location">Office</span>
                             </div>
                         </a>
                         <div class="inner-wrapper">
                             <a href="blog-details.html">
-                                <h5 class="title">Modern Construction Techniques Materials Changing</h5>
+                                <h5 class="title" data-i18n="blog.1.title">Modern Construction Techniques Materials
+                                    Changing</h5>
                             </a>
                             <p class="disc">
-                                Construction industry undergone transformations in recent years. With advancements
-                                technology & the introduction of new materials
+                                <span data-i18n="blog.1.desc"></span>
                             </p>
                             <a href="blog-details.html" class="read-more-btn">Read More<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
@@ -453,19 +461,19 @@
                     <!-- single blog area start -->
                     <div class="rts-blog-card-one">
                         <a href="blog-details.html" class="thumbnail">
-                            <img src="assets/images/blog/02.webp" alt="blog_card">
+                            <img src="assets/images/blog/blog2.png" alt="blog_card">
                             <div class="tag-area">
-                                <span class="time">2Years Ago</span>
-                                <span class="location">Office</span>
+                                <span data-i18n="blog.tag.time" class="time">2Years Ago</span>
+                                <span data-i18n="blog.tag.location" class="location">Office</span>
                             </div>
                         </a>
                         <div class="inner-wrapper">
                             <a href="blog-details.html">
-                                <h5 class="title">Streamlining Projects for Faster Cost Effective Results</h5>
+                                <h5 class="title" data-i18n="blog.2.title">Streamlining Projects for Faster Cost
+                                    Effective Results</h5>
                             </a>
                             <p class="disc">
-                                Construction industry undergone transformations in recent years. With advancements
-                                technology & the introduction of new materials
+                                <span data-i18n="blog.2.desc"></span>
                             </p>
                             <a href="blog-details.html" class="read-more-btn">Read More<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
@@ -477,19 +485,19 @@
                     <!-- single blog area start -->
                     <div class="rts-blog-card-one">
                         <a href="blog-details.html" class="thumbnail">
-                            <img src="assets/images/blog/03.webp" alt="blog_card">
+                            <img src="assets/images/blog/blog3.png" alt="blog_card">
                             <div class="tag-area">
-                                <span class="time">2Years Ago</span>
-                                <span class="location">Office</span>
+                                <span data-i18n="blog.tag.time" class="time">2Years Ago</span>
+                                <span data-i18n="blog.tag.location" class="location">Office</span>
                             </div>
                         </a>
                         <div class="inner-wrapper">
                             <a href="blog-details.html">
-                                <h5 class="title">Modern Construction Techniques Materials Changing</h5>
+                                <h5 class="title" data-i18n="blog.3.title">Modern Construction Techniques Materials
+                                    Changing</h5>
                             </a>
                             <p class="disc">
-                                Construction industry undergone transformations in recent years. With advancements
-                                technology & the introduction of new materials
+                                <span data-i18n="blog.3.desc"></span>
                             </p>
                             <a href="blog-details.html" class="read-more-btn">Read More<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
@@ -501,19 +509,19 @@
                     <!-- single blog area start -->
                     <div class="rts-blog-card-one">
                         <a href="blog-details.html" class="thumbnail">
-                            <img src="assets/images/blog/19.webp" alt="blog_card">
+                            <img src="assets/images/blog/blog4.jpg" alt="blog_card">
                             <div class="tag-area">
-                                <span class="time">2Years Ago</span>
-                                <span class="location">Office</span>
+                                <span data-i18n="blog.tag.time" class="time">2Years Ago</span>
+                                <span data-i18n="blog.tag.location" class="location">Office</span>
                             </div>
                         </a>
                         <div class="inner-wrapper">
                             <a href="blog-details.html">
-                                <h5 class="title">Construction Upgrades That Add Maximum Value to Your Property</h5>
+                                <h5 class="title" data-i18n="blog.4.title">Construction Upgrades That Add Maximum Value
+                                    to Your Property</h5>
                             </a>
                             <p class="disc">
-                                Construction industry undergone transformations in recent years. With advancements
-                                technology & the introduction of new materials
+                                <span data-i18n="blog.4.desc"></span>
                             </p>
                             <a href="blog-details.html" class="read-more-btn">Read More<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
@@ -525,19 +533,19 @@
                     <!-- single blog area start -->
                     <div class="rts-blog-card-one">
                         <a href="blog-details.html" class="thumbnail">
-                            <img src="assets/images/blog/20.webp" alt="blog_card">
+                            <img src="assets/images/blog/blog5.png" alt="blog_card">
                             <div class="tag-area">
-                                <span class="time">2Years Ago</span>
-                                <span class="location">Office</span>
+                                <span data-i18n="blog.tag.time" class="time">2Years Ago</span>
+                                <span data-i18n="blog.tag.location" class="location">Office</span>
                             </div>
                         </a>
                         <div class="inner-wrapper">
                             <a href="blog-details.html">
-                                <h5 class="title">Integrating Style and Function for Beautiful Spaces</h5>
+                                <h5 class="title" data-i18n="blog.5.title">Integrating Style and Function for Beautiful
+                                    Spaces</h5>
                             </a>
                             <p class="disc">
-                                Construction industry undergone transformations in recent years. With advancements
-                                technology & the introduction of new materials
+                                <span data-i18n="blog.5.desc"></span>
                             </p>
                             <a href="blog-details.html" class="read-more-btn">Read More<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
@@ -549,19 +557,19 @@
                     <!-- single blog area start -->
                     <div class="rts-blog-card-one">
                         <a href="blog-details.html" class="thumbnail">
-                            <img src="assets/images/blog/21.webp" alt="blog_card">
+                            <img src="assets/images/blog/blog6.png" alt="blog_card">
                             <div class="tag-area">
-                                <span class="time">2Years Ago</span>
-                                <span class="location">Office</span>
+                                <span data-i18n="blog.tag.time" class="time">2Years Ago</span>
+                                <span data-i18n="blog.tag.location" class="location">Office</span>
                             </div>
                         </a>
                         <div class="inner-wrapper">
                             <a href="blog-details.html">
-                                <h5 class="title">From Concept to Completion with Tips for Every Room</h5>
+                                <h5 class="title" data-i18n="blog.6.title">From Concept to Completion with Tips for
+                                    Every Room</h5>
                             </a>
                             <p class="disc">
-                                Construction industry undergone transformations in recent years. With advancements
-                                technology & the introduction of new materials
+                                <span data-i18n="blog.6.desc"></span>
                             </p>
                             <a href="blog-details.html" class="read-more-btn">Read More<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
@@ -573,19 +581,19 @@
                     <!-- single blog area start -->
                     <div class="rts-blog-card-one">
                         <a href="blog-details.html" class="thumbnail">
-                            <img src="assets/images/blog/22.webp" alt="blog_card">
+                            <img src="assets/images/blog/blog7.JPG" alt="blog_card">
                             <div class="tag-area">
-                                <span class="time">2Years Ago</span>
-                                <span class="location">Office</span>
+                                <span data-i18n="blog.tag.time" class="time">2Years Ago</span>
+                                <span data-i18n="blog.tag.location" class="location">Office</span>
                             </div>
                         </a>
                         <div class="inner-wrapper">
                             <a href="blog-details.html">
-                                <h5 class="title">Construction Firms Achieve Cost Efficiency Without Sacrificing</h5>
+                                <h5 class="title" data-i18n="blog.7.title">Construction Firms Achieve Cost Efficiency
+                                    Without Sacrificing</h5>
                             </a>
                             <p class="disc">
-                                Construction industry undergone transformations in recent years. With advancements
-                                technology & the introduction of new materials
+                                <span data-i18n="blog.7.desc"></span>
                             </p>
                             <a href="blog-details.html" class="read-more-btn">Read More<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
@@ -597,19 +605,18 @@
                     <!-- single blog area start -->
                     <div class="rts-blog-card-one">
                         <a href="blog-details.html" class="thumbnail">
-                            <img src="assets/images/blog/23.webp" alt="blog_card">
+                            <img src="assets/images/blog/blog8.JPG" alt="blog_card">
                             <div class="tag-area">
-                                <span class="time">2Years Ago</span>
-                                <span class="location">Office</span>
+                                <span data-i18n="blog.tag.time" class="time">2Years Ago</span>
+                                <span data-i18n="blog.tag.location" class="location">Office</span>
                             </div>
                         </a>
                         <div class="inner-wrapper">
                             <a href="blog-details.html">
-                                <h5 class="title">What You Need to Know Before Building</h5>
+                                <h5 class="title" data-i18n="blog.8.title">What You Need to Know Before Building</h5>
                             </a>
                             <p class="disc">
-                                Construction industry undergone transformations in recent years. With advancements
-                                technology & the introduction of new materials
+                                <span data-i18n="blog.8.desc"></span>
                             </p>
                             <a href="blog-details.html" class="read-more-btn">Read More<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
@@ -621,19 +628,19 @@
                     <!-- single blog area start -->
                     <div class="rts-blog-card-one">
                         <a href="blog-details.html" class="thumbnail">
-                            <img src="assets/images/blog/24.webp" alt="blog_card">
+                            <img src="assets/images/blog/blog9.JPG" alt="blog_card">
                             <div class="tag-area">
-                                <span class="time">2Years Ago</span>
-                                <span class="location">Office</span>
+                                <span data-i18n="blog.tag.time" class="time">2Years Ago</span>
+                                <span data-i18n="blog.tag.location" class="location">Office</span>
                             </div>
                         </a>
                         <div class="inner-wrapper">
                             <a href="blog-details.html">
-                                <h5 class="title">Modern Construction Techniques Materials Changing</h5>
+                                <h5 class="title" data-i18n="blog.9.title">Modern Construction Techniques Materials
+                                    Changing</h5>
                             </a>
                             <p class="disc">
-                                Construction industry undergone transformations in recent years. With advancements
-                                technology & the introduction of new materials
+                                <span data-i18n="blog.9.desc"></span>
                             </p>
                             <a href="blog-details.html" class="read-more-btn">Read More<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
@@ -657,33 +664,31 @@
                             <div class="icon">
                                 <i class="fas fa-phone-alt"></i>
                             </div>
-                            <h6 class="title">Call Us Now</h6>
-                            <a href="#">(646) 555-0258</a>
-                            <a href="#">(213) 555-0456, (503) 555-0666</a>
+                            <h6 class="title" data-i18n="footer.phone"></h6>
+                            <a href="#">(+84) 968 565 999</a>
+                            <a href="#">(+84) 968 565 999</a>
                         </div>
                         <div class="single-contact-area-box">
                             <div class="icon">
                                 <i class="fa-solid fa-clock"></i>
                             </div>
-                            <h6 class="title">Office Time</h6>
-                            <a href="#">Mon-Fri: 9:00 am to 5:00 pm <br>
-                                Sat: 9:00 am to 2:00 pm</a>
+                            <h6 class="title" data-i18n="footer.hours"></h6>
+                            <a data-i18n="footer.hours.value"></a>
                         </div>
                         <div class="single-contact-area-box">
                             <div class="icon">
                                 <i class="fa-solid fa-envelope"></i>
                             </div>
-                            <h6 class="title">Need Support</h6>
-                            <a href="#">support@elever.com</a>
-                            <a href="#">help-elver@gmail.com</a>
+                            <h6 class="title" data-i18n="footer.email"></h6>
+                            <a href="#">info@kemixport.com</a>
+                            <a href="#">export@kemixport.com</a>
                         </div>
                         <div class="single-contact-area-box">
                             <div class="icon">
                                 <i class="fa-sharp fa-solid fa-location-dot"></i>
                             </div>
-                            <h6 class="title">Our Address</h6>
-                            <a href="#">456 Elm Avenue, Floor 2, San <br>
-                                Francisco, CA 94103</a>
+                            <h6 class="title" data-i18n="footer.address"></h6>
+                            <a data-i18n="footer.address.value"></a>
                         </div>
                     </div>
                 </div>
@@ -697,13 +702,11 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <ul class="footer-float-nav">
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="project.html">Projects</a></li>
-                                        <li><a href="blog-grid.html">Updates</a></li>
-                                        <li><a href="vision.html">Mission</a></li>
-                                        <li><a href="company-history.html">Inside</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="company-story.html">History</a></li>
+                                        <li><a href="#" data-i18n="footer.home"></a></li>
+                                        <li><a href="#" data-i18n="footer.products"></a></li>
+                                        <li><a href="#" data-i18n="footer.about"></a></li>
+                                        <li><a href="#" data-i18n="footer.blog"></a></li>
+                                        <li><a href="#" data-i18n="footer.contact"></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -717,12 +720,9 @@
                 <div class="col-lg-4">
                     <div class="footer-wrapper-left-one">
                         <a href="#" class="logo">
-                            <img src="assets/images/logo/01.svg" alt="logo">
+                            <img src="assets/images/logo/logo.png" alt="logo" style="width: 170px;">
                         </a>
-                        <p class="disc">
-                            we’re committed to elevating the construction experience for our clients. With a passion for
-                            innovation and quality craftsmanship,
-                        </p>
+                        <p class="disc" data-i18n="footer.desc"></p>
                         <div class="social-area-wrapper-one">
                             <ul>
                                 <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -738,43 +738,39 @@
                         <div class="single-nav-area-footer use-link">
                             <h4 class="title">Useful Links</h4>
                             <ul>
-                                <li><a href="about.html"><i class="fa-regular fa-arrow-right-long"></i>About Us</a></li>
-                                <li><a href="about.html"><i class="fa-regular fa-arrow-right-long"></i>Our Gallery</a>
+                                <li><a href="#"><i class="fa-regular fa-arrow-right-long"></i>Home</a></li>
+                                <li><a href="#"><i class="fa-regular fa-arrow-right-long"></i>Products</a>
                                 </li>
-                                <li><a href="service.html"><i class="fa-regular fa-arrow-right-long"></i>Our
-                                        Services</a>
                                 </li>
-                                <li><a href="team.html"><i class="fa-regular fa-arrow-right-long"></i>Our Team</a></li>
-                                <li><a href="contact.html"><i class="fa-regular fa-arrow-right-long"></i>Contact Us</a>
+                                <li><a href="#"><i class="fa-regular fa-arrow-right-long"></i>About Us</a>
+                                </li>
+                                <li><a href="#"><i class="fa-regular fa-arrow-right-long"></i>Blog</a></li>
+                                <li><a href="#"><i class="fa-regular fa-arrow-right-long"></i>Contact</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="single-nav-area-footer use-link">
                             <h4 class="title">Quick Services</h4>
                             <ul>
-                                <li><a href="service-single.html"><i class="fa-regular fa-arrow-right-long"></i>General
-                                        Contracting</a>
-                                </li>
-                                <li><a href="service-single.html"><i class="fa-regular fa-arrow-right-long"></i>Project
-                                        Management</a>
-                                </li>
-                                <li><a href="service-single.html"><i class="fa-regular fa-arrow-right-long"></i>New
-                                        Construction</a></li>
-                                <li><a href="service-single.html"><i
-                                            class="fa-regular fa-arrow-right-long"></i>Renovations
-                                        &
-                                        Remodeling</a></li>
-                                <li><a href="service-single.html"><i class="fa-regular fa-arrow-right-long"></i>Interior
-                                        Finishing</a>
+                                <li><a href="#"><i class="fa-regular fa-arrow-right-long"></i>BBQ
+                                        Charcoal</a></li>
+                                <li><a href="#"><i class="fa-regular fa-arrow-right-long"></i>Heating
+                                        Charcoal</a></li>
+                                <li><a href="#"><i class="fa-regular fa-arrow-right-long"></i>Sawdust
+                                        Briquette Charcoal</a></li>
+                                <li><a href="#"><i class="fa-regular fa-arrow-right-long"></i>Hardwood Lump
+                                        Charcoal</a></li>
                                 </li>
                             </ul>
                         </div>
                         <div class="single-nav-area-footer news-letter">
-                            <h4 class="title">Newsletter</h4>
-                            <p>Aplications prodize before front end ortals visualize front end</p>
+                            <h4 class="title" data-i18n="newsletter.title">Newsletter</h4>
+                            <p data-i18n="newsletter.desc">Aplications prodize before front end ortals visualize front
+                                end</p>
                             <form action="#">
                                 <input type="email" placeholder="Email Address" required>
-                                <button class="btn-subscribe mt--15">Subscribe Now</button>
+                                <button class="btn-subscribe mt--15" data-i18n="newsletter.button">Subscribe
+                                    Now</button>
                             </form>
                         </div>
                     </div>
@@ -794,13 +790,13 @@
                                                 new Date().getFullYear()
                                             )
                                         </script>
-                                        Elever. All Rights Reserved.
+                                        <span data-i18n="footer.copyright">Kemixport. All Rights Reserved.</span>
                                     </p>
                                     <div class="right-nav">
                                         <ul>
-                                            <li><a href="terms-of-condition.html">Terms of use </a></li>
-                                            <li><a href="privacy-policy.html"> Privacy</a></li>
-                                            <li><a href="privacy-policy.html">Environmental Policy</a></li>
+                                            <li><a data-i18n="footer.terms"></a></li>
+                                            <li><a data-i18n="footer.privacy"></a></li>
+                                            <li><a data-i18n="footer.environment"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -827,10 +823,10 @@
     <!-- progress area end -->
 
     <!-- rtl btn area start -->
-    <div class="rtl-ltr-switcher-btn">
+    <!-- <div class="rtl-ltr-switcher-btn">
         <span class="rtl show">View RTL</span>
         <span class="ltr">View LTR</span>
-    </div>
+    </div> -->
     <!-- rtl btn area end -->
 
     <!-- progress area start -->
@@ -882,6 +878,7 @@
     <script src="assets/js/plugins/contact.form.js"></script>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/lang.js"></script>
 </body>
 
 </html>

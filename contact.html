@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -415,13 +414,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-area-inner">
-                        <span class="water-text">Liên hệ</span>
-                        <h1 class="title">
-                            Liên hệ
-                        </h1>
+                        <span class="water-text" data-i18n="contact.breadcrumb.water"></span>
+                        <h1 class="title" data-i18n="contact.breadcrumb.title"></h1>
                         <div class="nav-area-navigation">
-                            <a href="index.html">Trang chủ</a>
-                            <a class="current" href="#">Liên hệ</a>
+                            <a href="index.html" data-i18n="contact.breadcrumb.home"></a>
+                            <a class="current" href="#" data-i18n="contact.breadcrumb.contact"></a>
                         </div>
                     </div>
                 </div>
@@ -437,21 +434,16 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 pr--60 pr_sm--0 mb_sm--30 pr_md--10 pb_md--25 pb_sm--25">
                     <div class="contact-main-wrapper-left">
-                        <span>Gửi Yêu Cầu Nhanh</span>
-                        <h3 class="title-main">
-                            Đội ngũ tư vấn của chúng tôi
-                            <br> luôn sẵn sàng 24/7
-                        </h3>
-                        <p class="disc">
-                            Liên Hệ Với Chúng Tôi Ngay Hôm Nay.
-                        </p>
+                        <span data-i18n="contact.form.quick"></span>
+                        <h3 class="title-main" data-i18n="contact.form.title"></h3>
+                        <p class="disc" data-i18n="contact.form.desc"></p>
                         <div class="row g-24">
                             <div class="col-lg-6">
                                 <div class="quick-contact-page-1">
                                     <div class="icon">
                                         <img src="assets/images/contact/01.svg" alt="contact">
                                     </div>
-                                    <h5 class="title">Phone/Whatsapp</h5>
+                                    <h5 class="title" data-i18n="contact.form.label.whatsapp"></h5>
                                     <p>
                                         +84 968 565 999 <br> +84 968 565 998
                                     </p>
@@ -462,7 +454,7 @@
                                     <div class="icon">
                                         <img src="assets/images/contact/02.svg" alt="contact">
                                     </div>
-                                    <h5 class="title">Địa chỉ</h5>
+                                    <h5 class="title" data-i18n="contact.form.label.address"></h5>
                                     <p>
                                         804 Quang Trung, Hà Đông, <br> Hà Nội, Việt Nam
                                     </p>
@@ -474,23 +466,28 @@
                 <div class="col-lg-6">
                     <div id="form-messages"></div>
                     <form id="contact-form" action="mailer.php" class="contact-form-area-wrapper">
-                        <h4 class="title">Gửi Yêu Cầu Nhanh</h4>
+                        <h4 class="title" data-i18n="contact.form.quick"></h4>
                         <div class="half-inpur-wrapper">
                             <div class="single">
-                                <input type="text" name="name" placeholder="Họ tên">
+                                <input type="text" name="name" placeholder="Name"
+                                    data-i18n-placeholder="contact.form.label.name">
                             </div>
                             <div class="single">
-                                <input type="text" name="email" placeholder="Số điện thoại" required>
+                                <input type="text" name="email" placeholder="Phone"
+                                    data-i18n-placeholder="contact.form.label.phone" required>
                             </div>
                         </div>
                         <div class="single">
-                            <input name="subject" type="text" placeholder="Email">
+                            <input name="subject" type="text" placeholder="Email"
+                                data-i18n-placeholder="contact.form.label.email">
                         </div>
                         <div class="single">
-                            <input name="subject" type="text" placeholder="Quốc gia">
+                            <input name="subject" type="text" placeholder="Country"
+                                data-i18n-placeholder="contact.form.label.country">
                         </div>
-                        <textarea name="message" id="" placeholder="Nội dung yêu cầu"></textarea>
-                        <button type="submit" class="rts-btn btn-primary">Nhận báo giá</button>
+                        <textarea name="message" id="" placeholder="Message"
+                            data-i18n-placeholder="contact.form.label.message"></textarea>
+                        <button type="submit" class="rts-btn btn-primary" data-i18n="contact.form.button"></button>
                     </form>
                 </div>
             </div>
@@ -594,43 +591,39 @@
                         <div class="single-nav-area-footer use-link">
                             <h4 class="title">Useful Links</h4>
                             <ul>
-                                <li><a href="about.html"><i class="fa-regular fa-arrow-right-long"></i>About Us</a></li>
-                                <li><a href="about.html"><i class="fa-regular fa-arrow-right-long"></i>Our Gallery</a>
+                                <li><a href="#"><i class="fa-regular fa-arrow-right-long"></i>Home</a></li>
+                                <li><a href="#"><i class="fa-regular fa-arrow-right-long"></i>Products</a>
                                 </li>
-                                <li><a href="service.html"><i class="fa-regular fa-arrow-right-long"></i>Our
-                                        Services</a>
                                 </li>
-                                <li><a href="team.html"><i class="fa-regular fa-arrow-right-long"></i>Our Team</a></li>
-                                <li><a href="contact.html"><i class="fa-regular fa-arrow-right-long"></i>Contact Us</a>
+                                <li><a href="#"><i class="fa-regular fa-arrow-right-long"></i>About Us</a>
+                                </li>
+                                <li><a href="#"><i class="fa-regular fa-arrow-right-long"></i>Blog</a></li>
+                                <li><a href="#"><i class="fa-regular fa-arrow-right-long"></i>Contact</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="single-nav-area-footer use-link">
                             <h4 class="title">Quick Services</h4>
                             <ul>
-                                <li><a href="service-single.html"><i class="fa-regular fa-arrow-right-long"></i>General
-                                        Contracting</a>
-                                </li>
-                                <li><a href="service-single.html"><i class="fa-regular fa-arrow-right-long"></i>Project
-                                        Management</a>
-                                </li>
-                                <li><a href="service-single.html"><i class="fa-regular fa-arrow-right-long"></i>New
-                                        Construction</a></li>
-                                <li><a href="service-single.html"><i
-                                            class="fa-regular fa-arrow-right-long"></i>Renovations
-                                        &
-                                        Remodeling</a></li>
-                                <li><a href="service-single.html"><i class="fa-regular fa-arrow-right-long"></i>Interior
-                                        Finishing</a>
+                                <li><a href="#"><i class="fa-regular fa-arrow-right-long"></i>BBQ
+                                        Charcoal</a></li>
+                                <li><a href="#"><i class="fa-regular fa-arrow-right-long"></i>Heating
+                                        Charcoal</a></li>
+                                <li><a href="#"><i class="fa-regular fa-arrow-right-long"></i>Sawdust
+                                        Briquette Charcoal</a></li>
+                                <li><a href="#"><i class="fa-regular fa-arrow-right-long"></i>Hardwood Lump
+                                        Charcoal</a></li>
                                 </li>
                             </ul>
                         </div>
                         <div class="single-nav-area-footer news-letter">
-                            <h4 class="title">Newsletter</h4>
-                            <p>Aplications prodize before front end ortals visualize front end</p>
+                            <h4 class="title" data-i18n="newsletter.title">Newsletter</h4>
+                            <p data-i18n="newsletter.desc">Aplications prodize before front end ortals visualize front
+                                end</p>
                             <form action="#">
                                 <input type="email" placeholder="Email Address" required>
-                                <button class="btn-subscribe mt--15">Subscribe Now</button>
+                                <button class="btn-subscribe mt--15" data-i18n="newsletter.button">Subscribe
+                                    Now</button>
                             </form>
                         </div>
                     </div>

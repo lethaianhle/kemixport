@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav-kemixport.png">
     <title>Kemixport - Than Sạch Từ Làng Nghề Việt Nam - Đối Tác Toàn Cầu Của Bạn</title>
     <!-- fontawesome css -->
     <link rel="stylesheet" preload href="assets/css/plugins/fontawesome.css">
@@ -40,15 +40,22 @@
                                     <a href="#">info@kemixport.com</a>
                                 </div>
                             </div>
-                            <div class="right">
+                            <div class="right"
+                                style="display: flex; align-items: center; justify-content: space-between;">
                                 <div class="social-header">
-                                    <span>Theo dõi chúng tôi:</span>
+                                    <span data-i18n="menu.follow-us">Follow us on:</span>
                                     <ul>
                                         <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                                         <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
                                         <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
                                     </ul>
+                                </div>
+                                <div class="language-switcher" style="margin-left: 40px;">
+                                    <select onchange="onLangChange()" id="lang-select" style="color: #222;">
+                                        <option value="vi">Vietnamese</option>
+                                        <option value="en">English</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -60,17 +67,17 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="header-bottom">
-                        <div class="logo-area">
-                            <a href="index.html"><img src="assets/images/logo/01.svg" alt="logo"></a>
+                        <div class="logo-area" style="width: 170px;">
+                            <a href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
                         </div>
                         <div class="nav-area">
                             <ul class="">
                                 <li class="main-nav">
-                                    <a href="index.html">Trang chủ</a>
+                                    <a href="index.html" data-i18n="menu.home">Home</a>
                                 </li>
 
                                 <li class="main-nav has-dropdown mega-menu">
-                                    <a href="contact.html">Sản phẩm</a>
+                                    <a href="#" data-i18n="menu.products">Products</a>
                                     <div class="rts-mega-menu service-mega-menu-style">
                                         <div class="wrapper">
                                             <div class="container">
@@ -201,16 +208,17 @@
                                     </div>
                                 </li>
                                 <li class="main-nav">
-                                    <a href="#">Về chúng tôi</a>
+                                    <a href="#" data-i18n="menu.about">About Us</a>
                                 </li>
                                 <li class="main-nav">
-                                    <a href="blog-grid.html">Blog</a>
+                                    <a href="blog-grid.html" data-i18n="menu.blog">Blog</a>
                                 </li>
-                                <li class="main-nav"><a href="#">Liên hệ</a></li>
+                                <li class="main-nav"><a href="contact.html" data-i18n="menu.contact">Contact</a></li>
                             </ul>
                         </div>
                         <div class="header-end">
-                            <a href="appoinment.html" class="rts-btn btn-primary">Nhận tư vấn ngay</a>
+                            <a href="appoinment.html" class="rts-btn btn-primary" data-i18n="button.consult">Nhận tư vấn
+                                ngay</a>
                             <div class="nav-btn menu-btn" id="menu-btn">
                                 <img src="assets/images/logo/bar.svg" alt="nav-iamge">
                             </div>
@@ -502,7 +510,6 @@
         </div>
     </div>
 
-
     <!-- rts footer area start -->
     <div class="rts-footer-area rts-section-gapTop bg_footer-1 bg_image">
         <div class="container">
@@ -513,7 +520,7 @@
                             <div class="icon">
                                 <i class="fas fa-phone-alt"></i>
                             </div>
-                            <h6 class="title">Phone/WhatsApp</h6>
+                            <h6 class="title" data-i18n="footer.phone"></h6>
                             <a href="#">(+84) 968 565 999</a>
                             <a href="#">(+84) 968 565 999</a>
                         </div>
@@ -521,15 +528,14 @@
                             <div class="icon">
                                 <i class="fa-solid fa-clock"></i>
                             </div>
-                            <h6 class="title">Giờ hành chính</h6>
-                            <a href="#">Thứ 2-Thứ 6: 9:00 am to 5:00 pm <br>
-                                Thứ 7: 9:00 am to 2:00 pm</a>
+                            <h6 class="title" data-i18n="footer.hours"></h6>
+                            <a data-i18n="footer.hours.value"></a>
                         </div>
                         <div class="single-contact-area-box">
                             <div class="icon">
                                 <i class="fa-solid fa-envelope"></i>
                             </div>
-                            <h6 class="title">Email hỗ trợ</h6>
+                            <h6 class="title" data-i18n="footer.email"></h6>
                             <a href="#">info@kemixport.com</a>
                             <a href="#">export@kemixport.com</a>
                         </div>
@@ -537,9 +543,8 @@
                             <div class="icon">
                                 <i class="fa-sharp fa-solid fa-location-dot"></i>
                             </div>
-                            <h6 class="title">Địa chỉ</h6>
-                            <a href="#">804 Quang Trung, Hà Đông,  <br>
-                                Hà Nội, Việt Nam</a>
+                            <h6 class="title" data-i18n="footer.address"></h6>
+                            <a data-i18n="footer.address.value"></a>
                         </div>
                     </div>
                 </div>
@@ -553,13 +558,11 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <ul class="footer-float-nav">
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Projects</a></li>
-                                        <li><a href="#">Updates</a></li>
-                                        <li><a href="#">Mission</a></li>
-                                        <li><a href="#">Inside</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                        <li><a href="#">History</a></li>
+                                        <li><a href="#" data-i18n="footer.home"></a></li>
+                                        <li><a href="#" data-i18n="footer.products"></a></li>
+                                        <li><a href="#" data-i18n="footer.about"></a></li>
+                                        <li><a href="#" data-i18n="footer.blog"></a></li>
+                                        <li><a href="#" data-i18n="footer.contact"></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -573,12 +576,9 @@
                 <div class="col-lg-4">
                     <div class="footer-wrapper-left-one">
                         <a href="#" class="logo">
-                            <img src="assets/images/logo/01.svg" alt="logo">
+                            <img src="assets/images/logo/logo.png" alt="logo" style="width: 170px;">
                         </a>
-                        <p class="disc">
-                            we’re committed to elevating the construction experience for our clients. With a passion for
-                            innovation and quality craftsmanship,
-                        </p>
+                        <p class="disc" data-i18n="footer.desc"></p>
                         <div class="social-area-wrapper-one">
                             <ul>
                                 <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -650,13 +650,13 @@
                                                 new Date().getFullYear()
                                             )
                                         </script>
-                                        Elever. All Rights Reserved.
+                                        <span data-i18n="footer.copyright">Kemixport. All Rights Reserved.</span>
                                     </p>
                                     <div class="right-nav">
                                         <ul>
-                                            <li><a href="terms-of-condition.html">Terms of use </a></li>
-                                            <li><a href="privacy-policy.html"> Privacy</a></li>
-                                            <li><a href="privacy-policy.html">Environmental Policy</a></li>
+                                            <li><a data-i18n="footer.terms"></a></li>
+                                            <li><a data-i18n="footer.privacy"></a></li>
+                                            <li><a data-i18n="footer.environment"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -738,6 +738,7 @@
     <script src="assets/js/plugins/contact.form.js"></script>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/lang.js"></script>
 </body>
 
 </html>

@@ -46,7 +46,9 @@
                                     <ul>
                                         <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                                         <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                        <li><a href="https://api.whatsapp.com/send/?phone=84968565999&text&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                        <li><a
+                                                href="https://api.whatsapp.com/send/?phone=84968565999&text&type=phone_number&app_absent=0"><i
+                                                    class="fa-brands fa-whatsapp"></i></a></li>
                                         <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
                                     </ul>
                                 </div>
@@ -216,7 +218,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div id="form-messages"></div>
-                    <form id="contact-form" action="mailer.php" class="contact-form-area-wrapper">
+                    <form id="contact-form" class="contact-form-area-wrapper">
                         <h4 class="title" data-i18n="contact.form.quick"></h4>
                         <div class="half-inpur-wrapper">
                             <div class="single">
@@ -224,16 +226,16 @@
                                     data-i18n-placeholder="contact.form.label.name">
                             </div>
                             <div class="single">
-                                <input type="text" name="email" placeholder="Phone"
+                                <input type="text" name="phone" placeholder="Phone"
                                     data-i18n-placeholder="contact.form.label.phone" required>
                             </div>
                         </div>
                         <div class="single">
-                            <input name="subject" type="text" placeholder="Email"
+                            <input name="email" type="text" placeholder="Email"
                                 data-i18n-placeholder="contact.form.label.email">
                         </div>
                         <div class="single">
-                            <input name="subject" type="text" placeholder="Country"
+                            <input name="country" type="text" placeholder="Country"
                                 data-i18n-placeholder="contact.form.label.country">
                         </div>
                         <textarea name="message" id="" placeholder="Message"
@@ -483,6 +485,35 @@
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/lang.js"></script>
+    <!-- Include EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+            (function () {
+                emailjs.init({
+                    publicKey: "OmafB9qfj7hM-DKD8",
+                });
+            })();
+
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            emailjs.send("service_6hxru68", "template_ei9mxn5", {
+                name: this.name.value,
+                phone: this.phone.value,
+                email: this.email.value,
+                country: this.country.value,
+                message: this.message.value,
+            })
+                .then(function (response) {
+                    alert("Cảm ơn bạn đã liên hệ! Thông tin đã được gửi.");
+                    document.getElementById("contact-form").reset();
+                }, function (error) {
+                    alert("Gửi thất bại. Vui lòng thử lại!");
+                    console.error("FAILED...", error);
+                });
+        });
+    </script>
 </body>
 
 </html>
